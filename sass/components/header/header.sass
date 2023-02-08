@@ -1,0 +1,88 @@
+header
+	position: relative
+	min-height: 625px
+	background: #D4EFF8
+	z-index: 0
+	&::before
+		content: " "
+		position: absolute
+		display: block
+		height: 100%
+		width: 100%
+		background: url(../img/banner-bg.svg) no-repeat top center
+		z-index: -1
+	.top 
+		padding-top: 16px 
+		z-index: 1
+	.top-w
+		@extend %align-v
+		justify-content: flex-end
+	.logo 
+		width: 400px
+		display: flex
+		margin-right: auto
+		.logo-img
+			margin-right: 14px
+		.logo-descr
+			margin-top: 11px
+			max-width: 278px
+			width: 100%
+			display: block
+			@include font (14px, 500, 140%)
+	.top-phone-w 
+		margin-right: 16px
+		@extend %align-v
+	.top-phone-img
+		margin-right: 8px
+	.top-phone-info
+		@include font (16px, 800, 140%)
+	.top-call 
+		margin-right: 40px
+		color: #0036B0
+	.top-btn-box 
+		height: 36px
+		padding: 8px 16px
+		margin-right: 24px
+	.top-btn-img
+		margin-right: 4px
+	.top-btn-link
+		@include font (14px, 800, 140%)
+		color: $color-txt-btn
+	.burger
+		padding: 10px 7px
+		display: flex
+		flex-direction: column
+		span
+			display: inline-block
+			width: 22px
+			height: 3px
+			background-color: #0036B0
+			margin-bottom: 3px
+			&:nth-child(2)
+				width: 19px
+			&:nth-child(3)
+				width: 16px
+				margin: 0
+
+	.banner 
+		z-index: 1
+		margin-top: -18px
+	.banner-w 
+		@extend %align-v
+	.banner-l 
+		margin-right: -43px
+	.banner-title
+		margin-bottom: 16px
+		h1
+			@include font (39px, 800, 130%)
+	.banner-descr 
+		max-width: 510px
+		margin-bottom: 40px
+	.banner-btn 
+		height: 48px
+		background-color: #0036B0
+		color: $color-txt-btn
+		@include font (14px, 800, 140%)
+		&:hover
+			background-color: #002476
+	.banner-r 
