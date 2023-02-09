@@ -1,1 +1,1 @@
-# Kugo_Test_WD
+# Выпускной проект — Glo Academy
