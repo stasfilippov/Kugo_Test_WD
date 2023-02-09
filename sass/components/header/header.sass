@@ -5,6 +5,10 @@
     &__nav-research
         padding-top: 1.8125rem
         padding-bottom: 2.5625rem
+    &__main
+        padding: 3.5rem 0
+    
+    
 
 
 // STYLES .nav-contacts
@@ -19,13 +23,13 @@
         gap: 1.875rem
     &__link
         display: inline-block
-        @include font(.75rem, 400, 17px, #5D6C7B)
+        @include font(.75rem, 400, 1.0625rem, #5D6C7B)
     &__messangers
         @extend %align-v
         gap: .5313rem
     &__phone
         @extend %align-v
-        @include font(.75rem, 500, 17px, #282739)
+        @include font(.75rem, 500, 1.0625rem, #282739)
 
 // STYLES .nav-research
 .nav-research
@@ -43,13 +47,14 @@
         &::placeholder
             font-family: 'Jost'
             font-style: normal
-            @include font(.875rem, 400, 20px, #5D6C7B)
+            @include font(.875rem, 400, 1.25rem, #5D6C7B)
     &__search-w
         @extend %align-v
         border: 1.5008px solid #6F73EE
-        border-radius: 5px
+        border-radius: 7.5px
     &__btn-catalog-w
         padding: .5rem 1.125rem .5rem .9375rem
+        gap: .8125rem
     &__input-control
         padding: .75rem
         background: #6F73EE
@@ -62,6 +67,52 @@
         @extend %align-v
         gap: .625rem
     &__text
-        @include font(.875rem, 500, 20px, #282739)
+        @include font(.875rem, 500, 1.25rem, #282739)
     &__link
         @extend %align-v
+
+
+// STYLES .main
+.main
+    min-height: 445px
+    position: relative
+    background: linear-gradient(73.21deg, #6F73EE 17.37%, rgba(111, 115, 238, 0) 67.02%), url('../images/bg-main.jpeg') top -145px right / auto 620px no-repeat, url('../images/bg-main.jpeg') top -145px left / 1101px 620px no-repeat
+    border-radius: 10px
+    .title
+        color: #FFFFFF
+    &__contacts-w
+        @extend %align-v
+        margin-bottom: 1.1875rem
+    &__icon-adress
+        margin-right: .5rem
+    &__adress-text
+        @include font(.75rem, 500, 1.0625rem, #FFFFFF)
+        margin-right: .625rem
+    &__time-work
+        @include font(.75rem, 400, 1.0625rem, #FFFFFF)
+        opacity: 0.7
+    &__title
+        max-width: 38.25rem
+        margin-bottom: .4375rem
+    &__subtitle
+        @include font(1.25rem, 400, 1.8125rem, #FFFFFF)
+        margin-bottom: 1.75rem
+    &__descr-w
+        @extend %align-v
+        gap: 2.1875rem
+        margin-bottom: 2.375rem
+    &__feature-w
+        @extend %align-v
+        gap: .9375rem
+        max-width: 12.75rem
+    &__icon-feature
+        background-color: #FFFFFF
+        opacity: 0.2
+        border-radius: 5px
+        padding: 12px
+    &__text-feature
+        @include font(.875rem, 500, 1.125rem, #FFFFFF)
+    &__button
+        padding: .9375rem 2.5625rem
+        background: #fff
+        @include font(1rem, 400, 23px, #6F73EE)
