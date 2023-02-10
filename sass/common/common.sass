@@ -36,6 +36,72 @@ a
 .title
 	@include font(2.1875rem, 600, 3.1875rem, #282739)
 	text-transform: uppercase
+.card
+	display: flex
+	flex-direction: column
+	position: relative
+	border: 1.5px solid #EAEBED
+	border-radius: 13px
+	&__content
+		flex-basis: 50%
+		padding: 1.25rem 1.5rem
+	&__label
+		@include font(1.125rem, 600, 1.625rem, #282739)
+		margin-bottom: 1.25rem
+	&__descr
+		margin-bottom: 1.5625rem
+	&__list
+		columns: 2 auto
+	&__item
+		@extend %align-v
+		margin-bottom: 1rem
+		&:nth-child(2),
+		&:nth-child(4)
+			margin-bottom: 0
+	&__item-icon
+		margin-right: .625rem
+	&__item-text
+		font-family: 'Roboto', sans-serif
+		font-style: normal
+		font-weight: 400
+		font-size: .875rem
+		line-height: 1rem
+		color: #5D6C7B
+	&__price-w
+		display: flex
+		margin-bottom: 1rem
+	&__price-numb
+		display: flex
+		flex-direction: column
+		margin-right: 1.625rem
+	&__price-old
+		@include font(.75rem, 500, 1.0625rem, #5D6C7B)
+		text-decoration: line-through
+	&__price-new
+		@include font(1.25rem, 600, 1.8125rem, #282739)
+	&__price-icon
+		border: .0813rem solid #EAEBED
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: .625rem
+		margin-left: .625rem
+	&__btn
+		width: 100%
+		@include font(.75rem, 400, 1.0625rem, #FFFFFF)
+		padding: .625rem 2.3125rem
+	&__icon-compare
+		position: absolute
+		padding: .5rem
+		display: flex
+		align-items: center
+		justify-content: center
+		top: 10px
+		right: 10px
+		background: rgba(255, 255, 255, 0.2)
+		border-radius: 50%
+
 .btn
 	display: flex
 	align-items: center

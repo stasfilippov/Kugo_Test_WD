@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -46,7 +47,7 @@ input {
   border-radius: 0;
 }
 
-.features__item, .main__feature-w, .main__descr-w, .main__contacts-w, .nav-research__link, .nav-research__busket-btn, .nav-research__buttons-w, .nav-research__search-w, .nav-research__presearch-wrapper, .nav-research, .nav-contacts__phone, .nav-contacts__messangers, .nav-contacts__link-wrapper {
+.features__item, .main__feature-w, .main__descr-w, .main__contacts-w, .nav-research__link, .nav-research__busket-btn, .nav-research__buttons-w, .nav-research__search-w, .nav-research__presearch-wrapper, .nav-research, .nav-contacts__phone, .nav-contacts__messangers, .nav-contacts__link-wrapper, .card__item {
   display: flex;
   align-items: center;
 }
@@ -106,6 +107,102 @@ a {
   color: #282739;
   /* @extend %extend-example */
   text-transform: uppercase;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1.5px solid #EAEBED;
+  border-radius: 13px;
+}
+.card__content {
+  flex-basis: 50%;
+  padding: 1.25rem 1.5rem;
+}
+.card__label {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.625rem;
+  color: #282739;
+  /* @extend %extend-example */
+  margin-bottom: 1.25rem;
+}
+.card__descr {
+  margin-bottom: 1.5625rem;
+}
+.card__list {
+  columns: 2 auto;
+}
+.card__item {
+  margin-bottom: 1rem;
+}
+.card__item:nth-child(2), .card__item:nth-child(4) {
+  margin-bottom: 0;
+}
+.card__item-icon {
+  margin-right: 0.625rem;
+}
+.card__item-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: #5D6C7B;
+}
+.card__price-w {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.card__price-numb {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.625rem;
+}
+.card__price-old {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.0625rem;
+  color: #5D6C7B;
+  /* @extend %extend-example */
+  text-decoration: line-through;
+}
+.card__price-new {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.8125rem;
+  color: #282739;
+  /* @extend %extend-example */
+}
+.card__price-icon {
+  border: 0.0813rem solid #EAEBED;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem;
+  margin-left: 0.625rem;
+}
+.card__btn {
+  width: 100%;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.0625rem;
+  color: #FFFFFF;
+  /* @extend %extend-example */
+  padding: 0.625rem 2.3125rem;
+}
+.card__icon-compare {
+  position: absolute;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
 }
 
 .btn {
@@ -307,6 +404,9 @@ a {
 .section__test-drive {
   margin-bottom: 6.25rem;
 }
+.section__training {
+  margin-bottom: 6.25rem;
+}
 .section__training .container-l {
   display: flex;
   justify-content: flex-end;
@@ -363,6 +463,18 @@ a {
 }
 .features__item-icon {
   margin-right: 0.625rem;
+}
+
+.store .store-w {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.125rem;
+}
+.store__title {
+  max-width: 45.75rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */
