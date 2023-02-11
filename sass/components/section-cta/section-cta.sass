@@ -1,0 +1,74 @@
+.cta
+	min-height: 27.8125rem
+	&__wrapper
+		background-color: #F4F7FB
+		border-radius: 10px
+	.container-l
+		position: relative
+	&__img
+		position: absolute
+		bottom: 0
+		right: 45px
+		max-height: 37.9375rem
+	&__content-wrapper
+		display: flex
+	&__content
+		flex-basis: 56%
+	&__title
+		max-width: 38.3125rem
+		margin-top: 5.5rem
+		margin-bottom: 2.5rem
+	&__form-text
+		@include font(1rem, 500, 1.4375rem, #282739)
+		margin-bottom: 1.25rem
+	&__input-group
+		display: flex
+		gap: 1.25rem
+		margin-bottom: 1.25rem
+	&__input
+		min-width: 16.4375rem
+		padding: .9375rem 1.5625rem
+		border: 1px solid #EAEBED
+		border-radius: 5px
+		@include font(1rem, 400, 1.4375rem, #282739)
+	&__form-button
+		@include font(1rem, 400, 1.4375rem, #fff)
+		padding: .9375rem 1.5625rem
+	&__checkbox
+		display: none
+	&__notify-wrapper
+		@include font(.75rem, 400, .875rem, #282739)
+		display: flex
+		align-items: center
+		max-width: 335px
+	&__custom-checkbox
+		display: inline-flex
+		flex-shrink: 0
+		position: relative
+		background: #fff
+		border-radius: 2px
+		width: 16px
+		height: 16px
+		margin-right: .75rem
+		vertical-align: sub	
+		&::before
+			content: ""
+			display: inline-flex
+			flex-shrink: 0
+			width: 13px
+			height: 13px
+			background-repeat: no-repeat
+			background-image: url("../images/check.svg")
+			background-size: contain
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%) scale(0)
+			margin-top: 1px
+			transition: 0.2s ease-in 
+	&__checkbox:checked + &__custom-checkbox::before
+		transform: translate(-50%, -50%) scale(1)
+	&__form-footer
+		margin-bottom: 4.875rem
+	&__link
+		text-decoration: underline
