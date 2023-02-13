@@ -1,0 +1,112 @@
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(41, 45, 51, 0.5);
+  z-index: 10;
+  display: flex;
+  transition: opacity 0.2s;
+  .notify {
+    padding-left: 1.0625rem;
+    &__wrapper {
+      align-items: start;
+      max-width: 14.25rem;
+    }
+    &__custom-checkbox {
+      background: #F4F7FB;
+    }
+    &__link {
+      text-decoration: none;
+      color: #6F73EE;
+    }
+  }
+  &__dialog {
+    max-width: 49.375rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 2.5rem 2.3125rem 2.5rem;
+    gap: 4.3125rem;
+    margin: auto;
+    background-color: #fff;
+    transform: translateY(-10%);
+    transition: transform 0.2s;
+  }
+  &__content {
+    flex-basis: 41.3%;
+  }
+  &__photo {
+    flex-basis: 49%;
+  }
+  &__title {
+    @include font(1.5625rem, 600, 2.25rem, #282739);
+    margin-bottom: .5625rem;
+  }
+  &__subtitle {
+    @include font(1rem, 400, 1.25rem, #282739);
+    margin-bottom: 1.8125rem;
+  }
+  &__text {
+    @include font(.875rem, 400, 1.25rem, #282739);
+    margin-bottom: 5.375rem;
+  }
+  &__form-text {
+    @include font(.75rem, 400, 1.0625rem, #5D6C7B);
+    margin-bottom: 1.25rem;
+  }
+  &__input {
+    padding: .9375rem 1.5625rem;
+    border: 1px solid #EAEBED;
+    border-radius: 5px;
+    min-width: 16.4375rem;
+    margin-bottom: 1.25rem;
+  }
+  input::placeholder {
+    @include font(1rem, 400, 1.4375rem, #5D6C7B);
+    letter-spacing: 0.155em;
+  }
+  &__form-button {
+    padding: .9375rem 3.5625rem;
+    @include font(1rem, 400, 1.4375rem, #FFFFFF);
+  }
+  &__form-footer {
+    margin-bottom: 2.31;
+    position: relative;
+    .just-validate-error-label {
+      position: absolute;
+      top: -1rem;
+      display: inline-block;
+      left: 0;
+      font-size: 0.8rem;
+    }
+  }
+  &__close {
+    position: absolute;
+    top: .875rem;
+    right: .875rem;
+  }
+  &__input-group {
+    position: relative;
+    margin-bottom: 1rem;
+    .just-validate-error-label {
+      position: absolute;
+      top: -1rem;
+      display: inline-block;
+      left: 0;
+      font-size: 0.8rem;
+    }
+  }
+}
+.modal.is-open {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+  .modal__dialog {
+    transform: translateY(0);
+  }
+}

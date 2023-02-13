@@ -1,0 +1,219 @@
+body {
+  font-family: $default-font;
+  font-size: $font-s;
+  font-style: normal;
+  font-weight: $font-w;
+  min-height: 100vh;
+  position: relative;
+  color: $color-default;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.separator {
+  width: 100%;
+  margin: 0 auto;
+  height: 1.5px;
+  background: #ECF3FF;
+}
+.container-b {
+  max-width: $content-width-b;
+  margin: 0 auto;
+  width: 100%;
+}
+.container-l {
+  max-width: $content-width-l;
+  margin: 0 auto;
+  width: 100%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo {
+  @include font(1.875rem, 700, 2.6875rem, #282739);
+  text-transform: uppercase;
+}
+.title {
+  @include font(2.1875rem, 600, 3.1875rem, #282739);
+  text-transform: uppercase;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1.5px solid #EAEBED;
+  border-radius: 13px;
+  &__content {
+    flex-basis: 50%;
+    padding: 1.25rem 1.5rem;
+  }
+  &__label {
+    @include font(1.125rem, 600, 1.625rem, #282739);
+    margin-bottom: 1.25rem;
+  }
+  &__descr {
+    margin-bottom: 1.5625rem;
+  }
+  &__list {
+    columns: 2 auto;
+    column-gap: 1.43rem;
+  }
+  &__item {
+    @extend %align-v;
+		margin-bottom: 1rem;
+    &:nth-child(2),
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+  }
+  &__item-icon {
+    margin-right: .625rem;
+  }
+  &__item-text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1rem;
+    color: #5D6C7B;
+  }
+  &__price-w {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  &__price-numb {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+  }
+  &__price-old {
+    @include font(.75rem, 500, 1.0625rem, #5D6C7B);
+    text-decoration: line-through;
+  }
+  &__price-new {
+    @include font(1.25rem, 600, 1.8125rem, #282739);
+  }
+  &__price-icon {
+    border: .0813rem solid #EAEBED;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .625rem .56rem;
+    margin-left: .625rem;
+  }
+  &__btn {
+    width: 100%;
+    @include font(.75rem, 400, 1.0625rem, #FFFFFF);
+    padding: .5rem 2.1rem;
+  }
+  &__icon-compare {
+    position: absolute;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+  }
+  &__tag {
+    &_red {
+      background: #EE685F;
+      padding: .25rem .5rem;
+      text-transform: uppercase;
+      top: 10px;
+      left: 10px;
+    }
+    &_green {
+      background: #75D14A;
+      padding: .25rem .5rem;
+      top: 10px;
+      left: 10px;
+    }
+  }
+}
+.btn {
+  display: flex;
+  align-items: center;
+  background: #6F73EE;
+  border: 1.5px solid #6F73EE;
+  border-radius: 5px;
+  font-family: $default-font;
+  &__burger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__line {
+    display: block;
+    background: #FFFFFF;
+    height: 1.3px;
+    margin-bottom: .3125rem;
+    width: 13px;
+    border-radius: 5px;
+    &:nth-child(3) {
+      width: 7px;
+      margin-bottom: 0;
+    }
+  }
+  &__text {
+    @include font(0.96rem, 500, 23px, #FFFFFF);
+  }
+}
+.tag {
+  @include font(.75rem, 500, 1.0625rem, #FFFFFF);
+  border-radius: 5px;
+  position: absolute;
+}
+.notify {
+  &__checkbox {
+    display: none;
+  }
+  &__wrapper {
+    @include font(.75rem, 400, .875rem, #282739);
+    display: flex;
+    align-items: center;
+    max-width: 20.9375rem;
+  }
+  &__custom-checkbox {
+    display: inline-flex;
+    flex-shrink: 0;
+    position: relative;
+    background: #fff;
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    margin-right: .75rem;
+    vertical-align: sub;
+
+    &::before {
+      content: "";
+      display: inline-flex;
+      flex-shrink: 0;
+      width: 13px;
+      height: 13px;
+      background-repeat: no-repeat;
+      background-image: url("../images/check.svg");
+      background-size: contain;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      margin-top: 1px;
+      transition: 0.2s ease-in;
+    }
+  }
+  &__checkbox:checked + &__custom-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  &__form-footer {
+    margin-bottom: 4.875rem;
+  }
+  &__link {
+    text-decoration: underline;
+  }
+}
