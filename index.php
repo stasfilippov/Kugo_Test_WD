@@ -530,7 +530,7 @@
 								</div>
 								<div class="cta__form-footer notify">
 									<label class="notify__wrapper">
-										<input type="checkbox" class="notify__checkbox">
+										<input type="checkbox" class="notify__checkbox" name="notify" required>
 										<span class="notify__custom-checkbox"></span>
 										<div class="div">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="notify__link">политикой конфиденциальности</a></div>
 									</label>
@@ -825,16 +825,16 @@
 							required
 							>
 						<!-- <label class="input-group-label" for="user-phone">Номер телефона</label> -->
-						<button type="submit" class="btn modal__form-button">Оформить предзаказ</button>
+						<button type="submit" name="notify" class="btn modal__form-button">Оформить предзаказ</button>
+					</div>
+					<div class="modal__notify notify">
+						<label class="notify__wrapper">
+							<input type="checkbox" name="notify" class="notify__checkbox" required>
+							<span class="notify__custom-checkbox"></span>
+							<div class="div">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="notify__link">политикой конфиденциальности</a></div>
+						</label>
 					</div>
 				</form>
-				<div class="modal__notify notify">
-					<label class="notify__wrapper">
-						<input type="checkbox" class="notify__checkbox">
-						<span class="notify__custom-checkbox"></span>
-						<div class="div">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="notify__link">политикой конфиденциальности</a></div>
-					</label>
-				</div>
 				<!-- /.cta-form-footer -->
 			</div>
 			<!-- /.modal__content -->
