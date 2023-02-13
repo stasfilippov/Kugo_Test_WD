@@ -261,6 +261,56 @@ a {
   position: absolute;
 }
 
+.notify__checkbox {
+  display: none;
+}
+.notify__wrapper {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 0.875rem;
+  color: #282739;
+  /* @extend %extend-example */
+  display: flex;
+  align-items: center;
+  max-width: 20.9375rem;
+}
+.notify__custom-checkbox {
+  display: inline-flex;
+  flex-shrink: 0;
+  position: relative;
+  background: #fff;
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  margin-right: 0.75rem;
+  vertical-align: sub;
+}
+.notify__custom-checkbox::before {
+  content: "";
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 13px;
+  height: 13px;
+  background-repeat: no-repeat;
+  background-image: url("../images/check.svg");
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  margin-top: 1px;
+  transition: 0.2s ease-in;
+}
+.notify__checkbox:checked + .notify__custom-checkbox::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+.notify__form-footer {
+  margin-bottom: 4.875rem;
+}
+.notify__link {
+  text-decoration: underline;
+}
+
 .header__nav-contacts {
   padding-top: 11px;
   padding-bottom: 11px;
@@ -568,55 +618,6 @@ a {
   /* @extend %extend-example */
   padding: 0.9375rem 1.5625rem;
 }
-.cta__checkbox {
-  display: none;
-}
-.cta__notify-wrapper {
-  font-size: 0.75rem;
-  font-weight: 400;
-  line-height: 0.875rem;
-  color: #282739;
-  /* @extend %extend-example */
-  display: flex;
-  align-items: center;
-  max-width: 335px;
-}
-.cta__custom-checkbox {
-  display: inline-flex;
-  flex-shrink: 0;
-  position: relative;
-  background: #fff;
-  border-radius: 2px;
-  width: 16px;
-  height: 16px;
-  margin-right: 0.75rem;
-  vertical-align: sub;
-}
-.cta__custom-checkbox::before {
-  content: "";
-  display: inline-flex;
-  flex-shrink: 0;
-  width: 13px;
-  height: 13px;
-  background-repeat: no-repeat;
-  background-image: url("../images/check.svg");
-  background-size: contain;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  margin-top: 1px;
-  transition: 0.2s ease-in;
-}
-.cta__checkbox:checked + .cta__custom-checkbox::before {
-  transform: translate(-50%, -50%) scale(1);
-}
-.cta__form-footer {
-  margin-bottom: 4.875rem;
-}
-.cta__link {
-  text-decoration: underline;
-}
 
 .footer {
   background: rgb(244, 247, 251);
@@ -852,6 +853,95 @@ a {
 }
 .footer .credits__chats-links:last-child {
   margin-right: 0;
+}
+
+.modal {
+  position: relative;
+  max-width: 49.375rem;
+}
+.modal .notify {
+  padding-left: 1.0625rem;
+}
+.modal .notify__wrapper {
+  align-items: start;
+  max-width: 14.25rem;
+}
+.modal .notify__custom-checkbox {
+  background: #F4F7FB;
+}
+.modal .notify__link {
+  text-decoration: none;
+  color: #6F73EE;
+}
+.modal__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 2.5rem 2.3125rem 2.5rem;
+  gap: 4.3125rem;
+}
+.modal__content {
+  flex-basis: 41.3%;
+}
+.modal__photo {
+  flex-basis: 49%;
+}
+.modal__title {
+  font-size: 1.5625rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+  color: #282739;
+  /* @extend %extend-example */
+  margin-bottom: 0.5625rem;
+}
+.modal__subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: #282739;
+  /* @extend %extend-example */
+  margin-bottom: 1.8125rem;
+}
+.modal__text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: #282739;
+  /* @extend %extend-example */
+  margin-bottom: 5.375rem;
+}
+.modal__form-text {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.0625rem;
+  color: #5D6C7B;
+  /* @extend %extend-example */
+  margin-bottom: 1.25rem;
+}
+.modal__input {
+  padding: 0.9375rem 1.5625rem;
+  border: 1px solid #EAEBED;
+  border-radius: 5px;
+  min-width: 16.4375rem;
+  margin-bottom: 1.25rem;
+}
+.modal input::placeholder {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4375rem;
+  color: #5D6C7B;
+  /* @extend %extend-example */
+  letter-spacing: 0.155em;
+}
+.modal__form-button {
+  padding: 0.9375rem 3.5625rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4375rem;
+  color: #FFFFFF;
+  /* @extend %extend-example */
+}
+.modal__form {
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */
