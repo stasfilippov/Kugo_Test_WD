@@ -139,11 +139,10 @@
 				<picture class="features__img">
 					<!-- <source type="image/webp" srcset="./images/compare.webp">
 					<source type="image/png" srcset="./images/compare.png"> -->
-					<img src="./images/scooter.png" alt="scooter" class="features__img">
+					<img width="515px" height="422px" src="./images/scooter.png" alt="scooter" class="features__img">
 				</picture>
 				<div class="container-l">
-					<div class="features__title title">Определите максимально подходящую вам модель
-						не теоретически, а на практике</div>
+					<div class="features__title title">Определите максимально подходящую вам модель <br> не теоретически, а на практике</div>
 					<div class="features__descr">
 						<p class="features__text">Тест-драйв поможет:</p>
 						<ul class="features__list">
@@ -189,7 +188,7 @@
 				</picture>
 				<div class="container-l">
 					<div class="features__content">
-						<div class="features__title title">Научим правильной и безопасной езде в городе вас или вашего ребенка</div>
+						<div class="features__title title">Научим правильной<br>и безопасной езде в городе вас или вашего ребенка</div>
 						<div class="features__descr">
 							<p class="features__text">На обучении специалист расскажет:</p>
 							<ul class="features__list">

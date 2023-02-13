@@ -52,6 +52,7 @@ a
 		margin-bottom: 1.5625rem
 	&__list
 		columns: 2 auto
+		column-gap: 1.43rem
 	&__item
 		@extend %align-v
 		margin-bottom: 1rem
@@ -73,7 +74,7 @@ a
 	&__price-numb
 		display: flex
 		flex-direction: column
-		margin-right: 0.3rem
+		margin-right: 1rem
 	&__price-old
 		@include font(.75rem, 500, 1.0625rem, #5D6C7B)
 		text-decoration: line-through
@@ -85,12 +86,12 @@ a
 		display: flex
 		align-items: center
 		justify-content: center
-		padding: .625rem .75rem
+		padding: .625rem .56rem
 		margin-left: .625rem
 	&__btn
 		width: 100%
 		@include font(.75rem, 400, 1.0625rem, #FFFFFF)
-		padding: .625rem 2.265rem
+		padding: .5rem 2.1rem
 	&__icon-compare
 		position: absolute
 		padding: .5rem
@@ -137,7 +138,7 @@ a
 			width: 7px
 			margin-bottom: 0
 	&__text
-		@include font(1rem, 500, 23px, #FFFFFF)
+		@include font(0.96rem, 500, 23px, #FFFFFF)
 .tag
 	@include font(.75rem, 500, 1.0625rem, #FFFFFF)
 	border-radius: 5px
