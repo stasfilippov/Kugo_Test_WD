@@ -1,6 +1,17 @@
 .modal
-    position: relative
-    max-width: 49.375rem
+    opacity: 0
+    visibility: hidden
+    transform: translateX(-100%)
+    position: fixed
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background-color: rgba(41, 45, 51, 0.5)
+    z-index: 10
+    display: flex
+    transition: opacity 0.2s
+
     .notify
         padding-left: 1.0625rem
         &__wrapper
@@ -11,11 +22,17 @@
         &__link
             text-decoration: none
             color: #6F73EE
-    &__wrapper
+    &__dialog
+        max-width: 49.375rem
+        position: relative
         display: flex
         align-items: center
         padding: 2.5rem 2.5rem 2.3125rem 2.5rem
         gap: 4.3125rem
+        margin: auto
+        background-color: #fff
+        transform: translateY(-10%)
+        transition: transform 0.2s
     &__content
         flex-basis: 41.3%
     &__photo
@@ -46,3 +63,13 @@
         @include font(1rem, 400, 1.4375rem, #FFFFFF)
     &__form
         margin-bottom: 1rem
+    &__close
+        position: absolute
+        top: .875rem
+        right: .875rem
+.modal.is-open
+    transform: translateX(0)
+    visibility: visible
+    opacity: 1
+    .modal__dialog
+        transform: translateY(0)

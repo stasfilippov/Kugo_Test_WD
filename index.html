@@ -8,53 +8,7 @@
 	<title>Kugo Test WD</title>
 </head>
 <body>
-	
-</body>
 	<header class="header front-page">
-		<div class="header__modal modal">
-			<div class="modal__wrapper">
-				<div class="modal__content">
-					<h2 class="modal__title title">Запишитесь на тест-драйв электросамоката</h2>
-					<!-- /.modal__title title -->
-					<p class="modal__subtitle">и подберите модель для себя</p>
-					<p class="modal__text">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
-					<form action="handler.php" method="POST" class="modal__form">
-						<p class="modal__form-text">Как с вами удобнее связаться?</p>
-						<div class="modal__input-group">
-							<input 
-								id="user-phone" 
-								type="tel"
-								name="userphone" 
-								class="modal__input phone-mask"
-								placeholder="+7 (___) __ - __ - __"
-								maxlength="30"
-								required
-								>
-							<!-- <label class="input-group-label" for="user-phone">Номер телефона</label> -->
-							<button type="submit" class="btn modal__form-button">Оформить предзаказ</button>
-						</div>
-					</form>
-					<div class="modal__notify notify">
-						<label class="notify__wrapper">
-							<input type="checkbox" class="notify__checkbox">
-							<span class="notify__custom-checkbox"></span>
-							<div class="div">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="notify__link">политикой конфиденциальности</a></div>
-						</label>
-					</div>
-					<!-- /.cta-form-footer -->
-				</div>
-				<!-- /.modal__content -->
-				<div class="modal__photo">
-					<picture>
-						<!-- <source type="image/webp" srcset="./images/compare.webp">
-						<source type="image/png" srcset="./images/compare.png"> -->
-						<img src="./images/modal-photo.png" alt="girl">
-					</picture>
-				</div>
-				<!-- /.modal__photo -->
-			</div>
-		</div>
-		<!-- /.header__modal modal -->
 		<div class="container-l">
 			<nav class="header__nav-contacts nav-contacts">
 				<div class="nav-contacts__socials">
@@ -172,7 +126,7 @@
 						</div>
 					</div>
 					<!-- /.descr-w -->
-					<button class="main__button btn">Записаться</button>
+					<button class="main__button btn" data-toggle="modal">Записаться</button>
 				</div>
 			</div>
 			<!-- /.header__main main -->
@@ -562,7 +516,7 @@
 							<form action="handler.php" method="POST" class="cta__form">
 								<p class="cta__form-text">Оставьте заявку, и менеджер подберет нужный самокат</p>
 								<div class="cta__input-group">
-									<input 
+									<input
 										id="user-phone" 
 										type="tel"
 										name="userphone" 
@@ -845,4 +799,57 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal">
+		<div class="modal__dialog">
+			<a href="#" class="modal__close" data-toggle="modal">
+				<svg height="20px" width="20px" class="modal__icon-close">
+					<use href="./icons/sprite.svg#close"></use>
+				</svg>
+			</a>
+			<!-- /.modal__close -->
+			<div class="modal__content">
+				<h2 class="modal__title title">Запишитесь на тест-драйв электросамоката</h2>
+				<!-- /.modal__title title -->
+				<p class="modal__subtitle">и подберите модель для себя</p>
+				<p class="modal__text">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
+				<form action="handler.php" method="POST" class="modal__form">
+					<p class="modal__form-text">Как с вами удобнее связаться?</p>
+					<div class="modal__input-group">
+						<input
+							id="user-phone" 
+							type="tel"
+							name="userphone" 
+							class="modal__input phone-mask"
+							placeholder="+7 (___) __ - __ - __"
+							maxlength="30"
+							required
+							>
+						<!-- <label class="input-group-label" for="user-phone">Номер телефона</label> -->
+						<button type="submit" class="btn modal__form-button">Оформить предзаказ</button>
+					</div>
+				</form>
+				<div class="modal__notify notify">
+					<label class="notify__wrapper">
+						<input type="checkbox" class="notify__checkbox">
+						<span class="notify__custom-checkbox"></span>
+						<div class="div">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="notify__link">политикой конфиденциальности</a></div>
+					</label>
+				</div>
+				<!-- /.cta-form-footer -->
+			</div>
+			<!-- /.modal__content -->
+			<div class="modal__photo">
+				<picture>
+					<!-- <source type="image/webp" srcset="./images/compare.webp">
+					<source type="image/png" srcset="./images/compare.png"> -->
+					<img src="./images/modal-photo.png" alt="girl">
+				</picture>
+			</div>
+			<!-- /.modal__photo -->
+		</div>
+	</div>
+	<!-- /.header__modal modal -->
+	<script src="js/just-validate.production.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
 </html>
