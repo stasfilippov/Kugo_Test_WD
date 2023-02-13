@@ -43,7 +43,7 @@ table {
 
 body {
   font-family: "Jost", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
   min-height: 100vh;
@@ -61,12 +61,12 @@ a {
   background: #ECF3FF; }
 
 .container-b {
-  max-width: 1380px;
+  max-width: 86.25rem;
   margin: 0 auto;
   width: 100%; }
 
 .container-l {
-  max-width: 1109px;
+  max-width: 69.3125rem;
   margin: 0 auto;
   width: 100%; }
 
@@ -396,6 +396,9 @@ a {
     color: #6F73EE;
     /* @extend %extend-example */ }
 
+@media (max-width: 1200px) {
+  html {
+    font-size: 0.875rem; } }
 .section__test-drive {
   margin-bottom: 6.25rem; }
 .section__training {
