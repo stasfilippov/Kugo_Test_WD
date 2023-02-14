@@ -78,7 +78,7 @@
 						<picture class="nav-research__icon">
 							<!-- <source type="image/webp" srcset="./images/compare.webp">
 							<source type="image/png" srcset="./images/compare.png"> -->
-							<img height="12px" width="20px" src="./images/compare.png">
+							<img alt="compare" height="12" width="20" src="./images/compare.png">
 						</picture>
 					</a>
 					<a href="" class="nav-research__link">
@@ -144,7 +144,7 @@
 				<picture class="features__img">
 					<!-- <source type="image/webp" srcset="./images/compare.webp">
 					<source type="image/png" srcset="./images/compare.png"> -->
-					<img width="515px" height="422px" src="./images/scooter.png" alt="scooter" class="features__img">
+					<img width="515" height="422" src="./images/scooter.png" alt="scooter" class="features__img">
 				</picture>
 				<div class="container-l">
 					<div class="features__wrapper">
@@ -251,7 +251,7 @@
 							<picture class="card__icon">
 								<!-- <source type="image/webp" srcset="./images/compare.webp">
 								<source type="image/png" srcset="./images/compare.png"> -->
-								<img height="12px" width="20px" src="./images/compare.png">
+								<img alt="compare" height="12" width="20" src="./images/compare.png">
 							</picture>
 						</div>
 						<img src="./images/store-icon.png" alt="store-icon" class="card__image">
@@ -316,7 +316,7 @@
 							<picture class="card__icon">
 								<!-- <source type="image/webp" srcset="./images/compare.webp">
 								<source type="image/png" srcset="./images/compare.png"> -->
-								<img height="12px" width="20px" src="./images/compare.png">
+								<img alt="compare" height="12" width="20" src="./images/compare.png">
 							</picture>
 						</div>
 						<img src="./images/store-icon.png" alt="store-icon" class="card__image">
@@ -381,7 +381,7 @@
 							<picture class="card__icon">
 								<!-- <source type="image/webp" srcset="./images/compare.webp">
 								<source type="image/png" srcset="./images/compare.png"> -->
-								<img height="12px" width="20px" src="./images/compare.png">
+								<img alt="compare" height="12" width="20" src="./images/compare.png">
 							</picture>
 						</div>
 						<img src="./images/store-icon.png" alt="store-icon" class="card__image">
@@ -446,7 +446,7 @@
 							<picture class="card__icon">
 								<!-- <source type="image/webp" srcset="./images/compare.webp">
 								<source type="image/png" srcset="./images/compare.png"> -->
-								<img height="12px" width="20px" src="./images/compare.png">
+								<img  alt="compare" height="12" width="20" src="./images/compare.png">
 							</picture>
 						</div>
 						<img src="./images/store-icon.png" alt="store-icon" class="card__image">
