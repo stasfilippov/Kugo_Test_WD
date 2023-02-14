@@ -1,6 +1,7 @@
 body {
   font-family: $default-font;
   font-size: $font-s;
+  font-display: swap;
   font-style: normal;
   font-weight: $font-w;
   min-height: 100vh;
@@ -221,4 +222,7 @@ input {
   &__link {
     text-decoration: underline;
   }
+.modal-success {
+  height: 43.625rem;
+}
 }

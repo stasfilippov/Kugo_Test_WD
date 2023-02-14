@@ -131,7 +131,7 @@
 						</div>
 					</div>
 					<!-- /.descr-w -->
-					<button class="main__button btn" data-toggle="modal">Записаться</button>
+					<button class="main__button btn" data-toggle="modal" data-target="#feedback-modal">Записаться</button>
 				</div>
 			</div>
 			<!-- /.header__main main -->
@@ -805,9 +805,9 @@
 			</div>
 		</div>
 	</footer>
-	<div class="modal">
+	<div class="modal" <!-- id="feedback-modal" -->>
 		<div class="modal__dialog">
-			<a href="#" class="modal__close" data-toggle="modal">
+			<a href="#" class="modal__close" data-toggle="modal" data-target="#feedback-modal">
 				<svg height="20px" width="20px" class="modal__icon-close">
 					<use href="./icons/sprite.svg#close"></use>
 				</svg>
@@ -856,6 +856,21 @@
 		</div>
 	</div>
 	<!-- /.header__modal modal -->
+	<div class="modal" id="alert-modal">
+		<div class="modal-dialog modal-success">
+			<img class="bg-image-modal" src="./image/thanks_illu.png" alt="thanks-subs">
+			<a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
+				<svg class="close-icon">
+					<use href="icon/sprite.svg#close"></use>
+				</svg> 
+			</a>
+			<h2 class="modal-title">Спасибо за заявку!</h2>
+			<p class="modal-text">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+			<div class="btn modal-success-btn"> 
+				<a href="./" class="modal-success-link">Вернуться на главную</a> 
+			</div>
+		</div>
+	</div>
 	<script src="js/just-validate.production.min.js"></script>
 	<script src="js/main.js"></script>
 </body>

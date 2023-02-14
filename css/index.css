@@ -235,6 +235,7 @@ table {
 body {
   font-family: "Jost", sans-serif;
   font-size: 1.125rem;
+  font-display: swap;
   font-style: normal;
   font-weight: 500;
   min-height: 100vh;
@@ -496,6 +497,9 @@ input {
 }
 .notify__link {
   text-decoration: underline;
+}
+.notify .modal-success {
+  height: 43.625rem;
 }
 
 .header__nav-contacts {
