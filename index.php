@@ -519,7 +519,7 @@
 					<div class="cta__content-wrapper">
 						<div class="cta__content">
 							<div class="cta__title title">Нет нужной модели, которую хотите протестировать?</div>
-							<form action="handler.php" method="POST" class="cta__form">
+							<form action="handler.php" method="POST" class="cta__form" id="cta_form">
 								<p class="cta__form-text">Оставьте заявку, и менеджер подберет нужный самокат</p>
 								<div class="cta__input-group">
 									<input
@@ -557,19 +557,22 @@
 		<div class="footer__top submit">
 			<div class="container-l">
 				<div class="submit__wrapper">
-					<div class="submit__text">Оставьте свою почту и станьте первым, кто получит скидку на новые самокаты</div>
-					<!-- /.submit__text -->
-					<div class="submit__input-group">
-						<input 
-						type="email" 
-						class="submit__input"
-						id="user-email" 
-						name="useremail" 
-						placeholder="Введите Ваш email"
-						maxlength="30"
-						required>
-						<button type="submit" class="submit__btn btn">Подписаться</button>
-					</div>
+					<form action="handler.php" class="submit__form" method="POST" id="async_form" autocomplete="off" novalidate="novalidate">
+						<div class="submit__text">Оставьте свою почту и станьте первым, кто получит скидку на новые самокаты</div>
+						<!-- /.submit__text -->
+						<div class="submit__input-group">
+							<input 
+								autocomplete="off"
+								type="text"
+								class="submit__input"
+								id="async_email"
+								name="useremail" 
+								placeholder="Введите Ваш email"
+								maxlength="30"
+							/>
+							<button type="submit" class="submit__btn btn">Подписаться</button>
+						</div>
+					</form>
 				</div>
 				<!-- /.submit__wrapper -->
 			</div>
@@ -818,7 +821,7 @@
 				<!-- /.modal__title title -->
 				<p class="modal__subtitle">и подберите модель для себя</p>
 				<p class="modal__text">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
-				<form action="handler.php" method="POST" class="cta__form">
+				<form action="handler.php" method="POST" class="cta__form" id="modal_form">
 					<p class="modal__form-text">Как с вами удобнее связаться?</p>
 					<div class="modal__input-group">
 						<input
@@ -856,7 +859,7 @@
 		</div>
 	</div>
 	<!-- /.header__modal modal -->
-	<div class="modal is-open" id="alert-modal">
+	<div class="modal" id="alert-modal">
 		<div class="modal__dialog">
 			<a href="#" class="modal__close" data-toggle="modal" data-target="#alert-modal">
 				<svg height="20px" width="20px" class="modal__icon-close">

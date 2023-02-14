@@ -1710,7 +1710,7 @@ input {
   background: #6F73EE;
   padding: 1.2rem 0;
 }
-.footer .submit__wrapper {
+.footer .submit__form {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1725,8 +1725,15 @@ input {
   text-transform: uppercase;
 }
 .footer .submit__input-group {
+  position: relative;
   display: flex;
   gap: 1.25rem;
+}
+.footer .submit__input-group .just-validate-error-field {
+  border: 1px solid red;
+}
+.footer .submit__input-group .just-validate-success-field {
+  border: 1px solid green;
 }
 .footer .submit__input {
   min-width: 25.625rem;
@@ -1739,6 +1746,13 @@ input {
   line-height: 23px;
   color: #FFFFFF;
   /* @extend %extend-example */
+}
+.footer .submit .just-validate-error-label {
+  position: absolute;
+  display: inline-block;
+  top: -1rem;
+  left: 1rem;
+  font-size: 0.8rem;
 }
 .footer .submit input::placeholder {
   font-size: 1rem;
@@ -2026,7 +2040,7 @@ input {
         align-items: center;
     } */
   }
-  .footer .submit__wrapper {
+  .footer .submit__form {
     flex-wrap: wrap;
     gap: 1rem;
   }
@@ -2094,7 +2108,7 @@ input {
         align-items: center;
     } */
   }
-  .footer .submit__wrapper {
+  .footer .submit__form {
     flex-wrap: wrap;
     gap: 1rem;
   }

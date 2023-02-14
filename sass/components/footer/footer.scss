@@ -10,7 +10,7 @@
   .submit {
     background: #6F73EE;
     padding: 1.2rem 0;
-    &__wrapper {
+    &__form {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -21,8 +21,15 @@
       text-transform: uppercase;
     }
     &__input-group {
+      position: relative;
       display: flex;
       gap: 1.25rem;
+      .just-validate-error-field {
+        border: 1px solid red;
+      }
+      .just-validate-success-field {
+        border: 1px solid green;
+      }
     }
     &__input {
       min-width: 25.625rem;
@@ -31,6 +38,13 @@
       border-radius: .3125rem;
       background: rgba(255, 255, 255, 0.2);
       @include font(1rem, 400, 23px, #FFFFFF);
+    }
+    .just-validate-error-label {
+      position: absolute;
+      display: inline-block;
+      top: -1rem;
+      left: 1rem;
+      font-size: 0.8rem;
     }
     input::placeholder {
       @include font(1rem, 400, 23px, #FFFFFF);

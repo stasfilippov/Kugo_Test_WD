@@ -94,48 +94,133 @@ const prefixNumber = (str) => {
   });
 
 
-const forms = document.querySelectorAll("form");
-forms.forEach((form) => {
-    const validation = new JustValidate(form, {
-        errorFieldCssClass: "is-invalid",
-    });
-    validation
-        .addField("[name=notify]", [
-            {
-                rule: "required",
-                errorMessage: "Примите соглашение",
-            },
-        ])
-        .addField("[name=userphone]", [
-            {
-                rule: 'required',
-                errorMessage: "Укажите телефон",
-            },
-        ])
-        .onSuccess((event) => {
-            const thisForm = event.target; // наша функция
-            const formData = new FormData(thisForm); // данные из нашей формы
-            const ajaxSend = (formData) => {
-                fetch(thisForm.getAttribute("action"), {
-                    method: thisForm.getAttribute("method"),
-                    body: formData, 
-                }).then((response) => {
-                    if (response.ok) {
-                        thisForm.reset();
-                        currentModal.classList.remove("is-open");
-                        alertModal.classList.add("is-open");
-                        currentModal = alertModal;
-                        modalDialog = currentModal.querySelector(".modal-dialog"); /* назначаем новое белое диалоговое окно */
-                        currentModal.addEventListener("click", event => { /* отслеживаем клик по окну и пустым облостям */
-                            if (!event.composedPath().includes(modalDialog)) { /* если клик в пустую область */
-                                currentModal.classList.remove("is-open"); /* закрываем окно */
-                            }
-                        });
-                    } else {
-                        alert(response.statusText);
-                    }
-                });
-            };
-            ajaxSend(formData);
-        });
+const validator = new JustValidate('#async_form', {
+validateBeforeSubmitting: true,
 });
+
+validator.addField('#async_email', [
+	{
+		rule: 'required',
+		errorMessage: "Заполните поле верно!",
+	},
+	{
+		rule: 'email',
+		errorMessage: "Заполните поле верно!",
+	},
+])
+.onSuccess((event) => {
+	const thisForm = event.target; // наша функция
+	const formData = new FormData(thisForm); // данные из нашей формы
+	const ajaxSend = (formData) => {
+		fetch(thisForm.getAttribute("action"), {
+			method: thisForm.getAttribute("method"),
+			body: formData, 
+		}).then((response) => {
+			if (response.ok) {
+				thisForm.reset();
+				currentModal.classList.remove("is-open");
+				alertModal.classList.add("is-open");
+				currentModal = alertModal;
+				modalDialog = currentModal.querySelector(".modal-dialog"); /* назначаем новое белое диалоговое окно */
+				currentModal.addEventListener("click", event => { /* отслеживаем клик по окну и пустым облостям */
+					if (!event.composedPath().includes(modalDialog)) { /* если клик в пустую область */
+						currentModal.classList.remove("is-open"); /* закрываем окно */
+					}
+				});
+			} else {
+				alert(response.statusText);
+			}
+		});
+	};
+	ajaxSend(formData);
+});
+
+
+const ctaValidator = new JustValidate("#cta_form", {
+	errorFieldCssClass: "is-invalid",
+});
+ctaValidator
+.addField("[name=notify]", [
+	{
+		rule: "required",
+		errorMessage: "Примите соглашение",
+	},
+])
+.addField("[name=userphone]", [
+	{
+		rule: 'required',
+		errorMessage: "Укажите телефон",
+	},
+])
+.onSuccess((event) => {
+	const thisForm = event.target; // наша функция
+	const formData = new FormData(thisForm); // данные из нашей формы
+	const ajaxSend = (formData) => {
+		fetch(thisForm.getAttribute("action"), {
+			method: thisForm.getAttribute("method"),
+			body: formData, 
+		}).then((response) => {
+			if (response.ok) {
+				thisForm.reset();
+				currentModal.classList.remove("is-open");
+				alertModal.classList.add("is-open");
+				currentModal = alertModal;
+				modalDialog = currentModal.querySelector(".modal-dialog"); /* назначаем новое белое диалоговое окно */
+				currentModal.addEventListener("click", event => { /* отслеживаем клик по окну и пустым облостям */
+					if (!event.composedPath().includes(modalDialog)) { /* если клик в пустую область */
+						currentModal.classList.remove("is-open"); /* закрываем окно */
+					}
+				});
+			} else {
+				alert(response.statusText);
+			}
+		});
+	};
+	ajaxSend(formData);
+});
+
+
+
+const modalValidator = new JustValidate('#modal_form', {
+	errorFieldCssClass: "is-invalid",
+});
+modalValidator
+.addField("[name=notify]", [
+	{
+		rule: "required",
+		errorMessage: "Примите соглашение",
+	},
+])
+.addField("[name=userphone]", [
+	{
+		rule: 'required',
+		errorMessage: "Укажите телефон",
+	},
+])
+.onSuccess((event) => {
+	const thisForm = event.target; // наша функция
+	const formData = new FormData(thisForm); // данные из нашей формы
+	const ajaxSend = (formData) => {
+		fetch(thisForm.getAttribute("action"), {
+			method: thisForm.getAttribute("method"),
+			body: formData, 
+		}).then((response) => {
+			if (response.ok) {
+				thisForm.reset();
+				currentModal.classList.remove("is-open");
+				alertModal.classList.add("is-open");
+				currentModal = alertModal;
+				modalDialog = currentModal.querySelector(".modal-dialog"); /* назначаем новое белое диалоговое окно */
+				currentModal.addEventListener("click", event => { /* отслеживаем клик по окну и пустым облостям */
+					if (!event.composedPath().includes(modalDialog)) { /* если клик в пустую область */
+						currentModal.classList.remove("is-open"); /* закрываем окно */
+					}
+				});
+			} else {
+				alert(response.statusText);
+			}
+		});
+	};
+	ajaxSend(formData);
+});
+
