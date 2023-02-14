@@ -645,7 +645,7 @@
 									<picture class="link-social__icon">
 										<!-- <source type="image/webp" srcset="./images/compare.webp">
 										<source type="image/png" srcset="./images/compare.png"> -->
-										<img src="./images/google-play.png" alt="google-play">
+										<img class="link-social__image" src="./images/google-play.png" alt="google-play">
 									</picture>
 								</a>
 							</div>
@@ -654,7 +654,7 @@
 									<picture class="link-social__icon">
 										<!-- <source type="image/webp" srcset="./images/compare.webp">
 										<source type="image/png" srcset="./images/compare.png"> -->
-										<img src="./images/app-store.png" alt="app-store">
+										<img class="link-social__image" src="./images/app-store.png" alt="app-store">
 									</picture>
 								</a>
 							</div>
