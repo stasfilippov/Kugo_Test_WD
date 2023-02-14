@@ -111,3 +111,15 @@
     transform: translateY(0);
   }
 }
+/* MODAL - ALERT */
+.modal {
+  &__content-alert {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  &__title-alert {
+    font-size: 2rem;
+  }
+}

@@ -2301,6 +2301,17 @@ input {
   transform: translateY(0);
 }
 
+/* MODAL - ALERT */
+.modal__content-alert {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+.modal__title-alert {
+  font-size: 2rem;
+}
+
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .modal .modal__photo {
     display: none;
@@ -2317,7 +2328,7 @@ input {
     display: none;
   }
   .modal .modal__dialog {
-    max-width: 24.375rem;
+    max-width: 27.375rem;
   }
   .modal .modal__content {
     flex-basis: 100%;

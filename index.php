@@ -805,7 +805,7 @@
 			</div>
 		</div>
 	</footer>
-	<div class="modal" <!-- id="feedback-modal" -->>
+	<div class="modal" id="feedback-modal">
 		<div class="modal__dialog">
 			<a href="#" class="modal__close" data-toggle="modal" data-target="#feedback-modal">
 				<svg height="20px" width="20px" class="modal__icon-close">
@@ -856,21 +856,31 @@
 		</div>
 	</div>
 	<!-- /.header__modal modal -->
-	<div class="modal" id="alert-modal">
-		<div class="modal-dialog modal-success">
-			<img class="bg-image-modal" src="./image/thanks_illu.png" alt="thanks-subs">
-			<a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
-				<svg class="close-icon">
-					<use href="icon/sprite.svg#close"></use>
-				</svg> 
+	<div class="modal is-open" id="alert-modal">
+		<div class="modal__dialog">
+			<a href="#" class="modal__close" data-toggle="modal" data-target="#alert-modal">
+				<svg height="20px" width="20px" class="modal__icon-close">
+					<use href="./icons/sprite.svg#close"></use>
+				</svg>
 			</a>
-			<h2 class="modal-title">Спасибо за заявку!</h2>
-			<p class="modal-text">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
-			<div class="btn modal-success-btn"> 
-				<a href="./" class="modal-success-link">Вернуться на главную</a> 
+			<!-- /.modal__close -->
+			<div class="modal__content-alert">
+				<h2 class="modal__title-alert title">Спасибо за заявку</h2>
+				<!-- /.modal__title title -->
+				<p class="modal__text-alert">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
 			</div>
+			<!-- /.modal__content -->
+			<div class="modal__photo">
+				<picture>
+					<!-- <source type="image/webp" srcset="./images/compare.webp">
+					<source type="image/png" srcset="./images/compare.png"> -->
+					<img src="./images/thanks_illu.jpg" alt="thanks">
+				</picture>
+			</div>
+			<!-- /.modal__photo -->
 		</div>
 	</div>
+	<!-- /.header__modal modal -->
 	<script src="js/just-validate.production.min.js"></script>
 	<script src="js/main.js"></script>
 </body>

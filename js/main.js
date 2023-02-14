@@ -8,7 +8,7 @@ modalButtons.forEach((button) => {  /*для каждой из кнопок за
 		event.preventDefault(); // убираю стандартное поведение при клике
 		currentModal = document.querySelector(button.dataset.target);  /* определяем текущее открытое окно */
 		currentModal.classList.toggle("is-open"); /* открываем текущее окно */
-		modalDialog = currentModal.querySelector(".modal-dialog"); /* назначаем новое белое диалоговое окно */
+		modalDialog = currentModal.querySelector(".modal__dialog"); /* назначаем новое белое диалоговое окно */
 		currentModal.addEventListener("click", event => { /* отслеживаем клик по окну и пустым облостям */
 			if (!event.composedPath().includes(modalDialog)) { /* если клик в пустую область */
 				currentModal.classList.remove("is-open"); /* закрываем окно */
