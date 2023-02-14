@@ -1,0 +1,41 @@
+.store {
+    @include media(screen,'>lg', '<=xl') {
+        .card {
+            flex-basis: 23%;
+        }
+        .container-l {
+            max-width: 52.313rem;
+        }
+    }
+    @include media(screen,'>md', '<=lg') {
+        .card {
+            flex-basis: 23%;
+        }
+        .container-l {
+            max-width: 34.313rem;
+        }
+    }
+    @include media(screen,'>sm', '<=md') {
+        .card {
+            flex-basis: 23%;
+        }
+        .container-l {
+            max-width: 34.313rem;
+        }
+    }
+    @include media(screen,'>319px', '<=sm') {
+        .card {
+            flex-basis: 23%;
+            .card__image {
+                width: 162px;
+                height: 100%;
+            }
+        }
+        .container-l {
+            max-width: 28.313rem;
+        }
+        .store__cards {
+            justify-content: center;
+        }
+    }
+}

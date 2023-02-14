@@ -1312,6 +1312,11 @@ input {
   }
 }
 
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .section__training .features__wrapper {
+    flex-basis: 50%;
+  }
+}
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .section__training {
     min-height: 56.375rem;
@@ -1427,9 +1432,6 @@ input {
 .store {
   margin-bottom: 6.25rem;
 }
-.store__card {
-  transition: box-shadow 0.2s, transform 0.2s;
-}
 .store .store-w {
   display: flex;
   flex-direction: column;
@@ -1443,7 +1445,49 @@ input {
 }
 .store__cards {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.6rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .store .card {
+    flex-basis: 23%;
+  }
+  .store .container-l {
+    max-width: 52.313rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .store .card {
+    flex-basis: 23%;
+  }
+  .store .container-l {
+    max-width: 34.313rem;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .store .card {
+    flex-basis: 23%;
+  }
+  .store .container-l {
+    max-width: 34.313rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .store .card {
+    flex-basis: 23%;
+  }
+  .store .card .card__image {
+    width: 162px;
+    height: 100%;
+  }
+  .store .container-l {
+    max-width: 28.313rem;
+  }
+  .store .store__cards {
+    justify-content: center;
+  }
 }
 
 .cta {

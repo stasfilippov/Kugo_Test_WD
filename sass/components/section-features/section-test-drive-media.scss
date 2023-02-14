@@ -71,6 +71,11 @@
     }
 }
 .section__training {
+    @include media(screen,'>lg', '<=xl') {
+        .features__wrapper {
+            flex-basis: 50%;
+        }
+    }
     @include media(screen, '>md', '<=lg') {
         min-height: 56.375rem;
     }

@@ -254,7 +254,7 @@
 								<img height="12px" width="20px" src="./images/compare.png">
 							</picture>
 						</div>
-						<img src="./images/store-icon.png" alt="store-icon" class="card__icon">
+						<img src="./images/store-icon.png" alt="store-icon" class="card__image">
 						<div class="card__content">
 							<div class="card__label">Kugoo Kirin M4</div>
 							<!-- /.card__label -->
@@ -319,7 +319,7 @@
 								<img height="12px" width="20px" src="./images/compare.png">
 							</picture>
 						</div>
-						<img src="./images/store-icon.png" alt="store-icon" class="card__icon">
+						<img src="./images/store-icon.png" alt="store-icon" class="card__image">
 						<div class="card__content">
 							<div class="card__label">Kugoo Kirin M4</div>
 							<!-- /.card__label -->
@@ -384,7 +384,7 @@
 								<img height="12px" width="20px" src="./images/compare.png">
 							</picture>
 						</div>
-						<img src="./images/store-icon.png" alt="store-icon" class="card__icon">
+						<img src="./images/store-icon.png" alt="store-icon" class="card__image">
 						<div class="card__content">
 							<div class="card__label">Kugoo Kirin M4</div>
 							<!-- /.card__label -->
@@ -449,7 +449,7 @@
 								<img height="12px" width="20px" src="./images/compare.png">
 							</picture>
 						</div>
-						<img src="./images/store-icon.png" alt="store-icon" class="card__icon">
+						<img src="./images/store-icon.png" alt="store-icon" class="card__image">
 						<div class="card__content">
 							<div class="card__label">Kugoo Kirin M4</div>
 							<!-- /.card__label -->
