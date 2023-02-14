@@ -30,6 +30,7 @@
       border: none;
       border-radius: .3125rem;
       background: rgba(255, 255, 255, 0.2);
+      @include font(1rem, 400, 23px, #FFFFFF);
     }
     input::placeholder {
       @include font(1rem, 400, 23px, #FFFFFF);
@@ -39,6 +40,7 @@
       border-radius: 5px;
       padding: .9375rem 1.5625rem;
       @include font(1rem, 400, 1.4375rem, #6F73EE);
+      transition: background 0.2s, padding 0.2s, font-size 0.2s, color 0.2s;
     }
   }
   &__middle {
@@ -116,6 +118,7 @@
     }
     &__app {
       border-radius: 5px;
+      transition: box-shadow 0.2s, transform 0.2s;
     }
     &__media-w {
       display: flex;
@@ -128,6 +131,7 @@
       gap: .8125rem;
       background: #fff;
       border-radius: .3125rem;
+      transition: box-shadow 0.2s, transform 0.2s;
     }
     .vk {
       padding: .3125rem 1rem .4375rem .75rem;
@@ -169,6 +173,9 @@
       align-items: center;
       gap: .3063rem;
     }
+    &__payment-item {
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
     &__content-r-wrapper {
       display: flex;
       align-items: center;
@@ -182,6 +189,7 @@
       &:last-child {
         margin-right: 0;
       }
+      transition: width 0.2s, height 0.2s;
     }
   }
 }

@@ -11,6 +11,9 @@ a {
   text-decoration: none;
   color: black;
 }
+input {
+  outline: none;
+}
 .separator {
   width: 100%;
   margin: 0 auto;
@@ -103,11 +106,13 @@ a {
     justify-content: center;
     padding: .625rem .56rem;
     margin-left: .625rem;
+    transition: background 0.2s;
   }
   &__btn {
     width: 100%;
     @include font(.75rem, 400, 1.0625rem, #FFFFFF);
     padding: .5rem 2.1rem;
+    transition: background 0.2s, padding 0.2s, font-size 0.2s;
   }
   &__icon-compare {
     position: absolute;

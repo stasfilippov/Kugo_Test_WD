@@ -535,7 +535,7 @@
 									<label class="notify__wrapper">
 										<input type="checkbox" class="notify__checkbox" name="notify" required>
 										<span class="notify__custom-checkbox"></span>
-										<div class="div">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="notify__link">политикой конфиденциальности</a></div>
+										<div class="notify__text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="notify__link">политикой конфиденциальности</a></div>
 									</label>
 								</div>
 								<!-- /.cta-form-footer -->

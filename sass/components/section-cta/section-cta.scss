@@ -48,6 +48,7 @@
   &__form-button {
     @include font(1rem, 400, 1.4375rem, #fff);
     padding: .9375rem 1.5625rem;
+    transition: background 0.2s, padding 0.2s, font-size 0.2s;
   }
   &__form-footer {
     margin-bottom: 4.875rem;

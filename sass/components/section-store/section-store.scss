@@ -1,5 +1,8 @@
 .store {
   margin-bottom: 6.25rem;
+  &__card {
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
   .store-w {
     display: flex;
     flex-direction: column;
