@@ -41,6 +41,7 @@
 					</div>
 					<!-- /.messangers -->
 				</div>
+				<a href="./" class="nav-contacts__logo logo">Kugoo</a>
 				<a href="tel:+78005055461" class="nav-contacts__phone">+7 (800) 505-54-61</a>
 				<!-- /.nav-contacts__phone -->
 			</nav>

@@ -23,6 +23,9 @@
     display: flex;
     gap: 2.1rem;
   }
+  &__logo {
+    display: none;
+  }
   &__link-wrapper {
     @extend %align-v;
         gap: 2.2rem;
