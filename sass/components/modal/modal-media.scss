@@ -1,0 +1,27 @@
+.modal {
+    @include media(screen, '>sm', '<=lg') {
+        .modal__photo {
+            display: none;
+        }
+        .modal__dialog {
+            max-width: 22.375rem;
+        }
+        .modal__content {
+            flex-basis: 100%;
+        }
+    }
+    @include media(screen, '>319px', '<=sm') {
+        .modal__photo {
+            display: none;
+        }
+        .modal__dialog {
+            max-width: 24.375rem;
+        }
+        .modal__content {
+            flex-basis: 100%;
+        }
+        .modal__form-button {
+            width: 100%;
+        }
+    }
+}
