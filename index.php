@@ -103,7 +103,7 @@
 						<svg height="15px" width="15px" class="main__icon-adress">
 							<use href="./icons/sprite.svg#adress"></use>
 						</svg>
-						<span class="main__adress-text">Восточно-Кругликовская улица, 86</span>
+						<a href="#" class="main__adress-text">Восточно-Кругликовская улица, 86</a>
 						<span class="main__time-work">Вт - Сб 10:00 - 20:00</span>
 					</div>
 					<!-- /.contacts-w-->

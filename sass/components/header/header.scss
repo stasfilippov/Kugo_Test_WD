@@ -39,6 +39,9 @@
     @extend %align-v;
         @include font(.75rem, 500, 1.0625rem, #282739);
   }
+  &__icon {
+    transition: width 0.2s, height 0.2s;
+  }
 // STYLES .nav-research
 }
 .nav-research {
@@ -48,13 +51,15 @@
   }
   &__presearch-wrapper {
     @extend %align-v;
-        gap: 1.25rem;
+    gap: 1.25rem;
     margin-right: 2.9375rem;
+    transition: background 0.2s;
   }
   &__input {
     border: none;
     min-width: 32.6875rem;
     margin: 0 1.25rem;
+    outline: none;
     &::placeholder {
       font-family: 'Jost';
       font-style: normal;
@@ -76,6 +81,9 @@
     background: #6F73EE;
     border: 1.5008px solid #6F73EE;
     border-radius: 0px 5px 5px 0px;
+  }
+  &__icon {
+    transition: width 0.2s, height 0.2s;
   }
   &__buttons-w {
     @extend %align-v;
@@ -145,5 +153,6 @@
     padding: .9375rem 2.5625rem;
     background: #fff;
     @include font(1rem, 400, 23px, #6F73EE);
+    transition: background 0.2s, color 0.2s, padding 0.2s;
   }
 }

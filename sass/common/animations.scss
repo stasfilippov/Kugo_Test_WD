@@ -1,0 +1,36 @@
+.nav-contacts__link:hover {
+	text-decoration: underline;
+}
+.nav-contacts__icon:hover {
+	width: .875rem;
+	height: .875rem;
+}
+.nav-contacts__phone:hover {
+	text-decoration: underline;
+}
+.nav-research__btn-catalog-w:hover {
+	cursor: pointer;
+}
+.nav-research__presearch-wrapper{
+	.btn:hover {
+		background: #595ccb;
+	}
+}
+.nav-research__input-control:hover {
+	background: #595ccb;
+	cursor: pointer;
+}
+.nav-research__icon:hover {
+	height: 22px;
+	width: 22px;
+}
+.main__adress-text:hover {
+	text-decoration: underline;
+}
+.main__button:hover {
+	cursor: pointer;
+	background: #efefef;
+	color: #3e43e6;
+	padding-right:  2.7rem;
+	padding-left: 2.7rem;
+}
