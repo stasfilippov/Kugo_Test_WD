@@ -1,7 +1,11 @@
 .section {    // STYLES .test-drive
   &__test-drive {
     margin-bottom: 6.25rem;
-  }    // STYLES .training
+    .container-l {
+      display: flex;
+    }
+  }   
+  // STYLES .training
   &__training {
     margin-bottom: 6.25rem;
     .container-l {
@@ -29,6 +33,9 @@
   &__content {
     flex-basis: 57%;
     padding-bottom: 2.375rem;
+  }
+  &__wrapper {
+    flex-basis: 58%;
   }
   &__title {
     padding-top: 1.6rem;

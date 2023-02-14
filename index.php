@@ -147,35 +147,37 @@
 					<img width="515px" height="422px" src="./images/scooter.png" alt="scooter" class="features__img">
 				</picture>
 				<div class="container-l">
-					<div class="features__title title">Определите максимально подходящую вам модель <br> не теоретически, а на практике</div>
-					<div class="features__descr">
-						<p class="features__text">Тест-драйв поможет:</p>
-						<ul class="features__list">
-							<li class="features__item">
-								<svg height="22px" width="22px" class="features__item-icon">
-									<use href="./icons/sprite.svg#check"></use>
-								</svg>
-								<p class="features__item-text"><strong>Понять</strong> подходит ли вам конкретная модель;</p>
-							</li>
-							<li class="features__item">
-								<svg height="22px" width="22px" class="features__item-icon">
-									<use href="./icons/sprite.svg#check"></use>
-								</svg>
-								<p class="features__item-text"><strong>Испытать</strong> самокат в «реальной жизни»;</p>
-							</li>
-							<li class="features__item">
-								<svg height="22px" width="22px" class="features__item-icon">
-									<use href="./icons/sprite.svg#check"></use>
-								</svg>
-								<p class="features__item-text"><strong>Оценить</strong> удобство хранения и эксплуатации;</p>
-							</li>
-							<li class="features__item">
-								<svg height="22px" width="22px" class="features__item-icon">
-									<use href="./icons/sprite.svg#check"></use>
-								</svg>
-								<p class="features__item-text"><strong>Узнать</strong> реальные характеристики и возможности модели.</p>
-							</li>
-						</ul>
+					<div class="features__wrapper">
+						<div class="features__title title">Определите максимально подходящую вам модель <br> не теоретически, а на практике</div>
+						<div class="features__descr">
+							<p class="features__text">Тест-драйв поможет:</p>
+							<ul class="features__list">
+								<li class="features__item">
+									<svg height="22px" width="22px" class="features__item-icon">
+										<use href="./icons/sprite.svg#check"></use>
+									</svg>
+									<p class="features__item-text"><strong>Понять</strong> подходит ли вам конкретная модель;</p>
+								</li>
+								<li class="features__item">
+									<svg height="22px" width="22px" class="features__item-icon">
+										<use href="./icons/sprite.svg#check"></use>
+									</svg>
+									<p class="features__item-text"><strong>Испытать</strong> самокат в «реальной жизни»;</p>
+								</li>
+								<li class="features__item">
+									<svg height="22px" width="22px" class="features__item-icon">
+										<use href="./icons/sprite.svg#check"></use>
+									</svg>
+									<p class="features__item-text"><strong>Оценить</strong> удобство хранения и эксплуатации;</p>
+								</li>
+								<li class="features__item">
+									<svg height="22px" width="22px" class="features__item-icon">
+										<use href="./icons/sprite.svg#check"></use>
+									</svg>
+									<p class="features__item-text"><strong>Узнать</strong> реальные характеристики и возможности модели.</p>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -192,7 +194,7 @@
 					<img src="./images/training.png" alt="training" class="features__img">
 				</picture>
 				<div class="container-l">
-					<div class="features__content">
+					<div class="features__wrapper">
 						<div class="features__title title">Научим правильной<br>и безопасной езде в городе вас или вашего ребенка</div>
 						<div class="features__descr">
 							<p class="features__text">На обучении специалист расскажет:</p>
