@@ -1,0 +1,12 @@
+.footer {
+    @include media(screen,'>xl','<=xxl') {
+        .container-l {
+            max-width: 62.313rem;
+        }
+    }
+    @include media(screen,'>lg','<=xl') {
+        .container-l {
+            max-width: 54.313rem;
+        }
+    }
+}

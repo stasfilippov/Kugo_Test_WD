@@ -1567,6 +1567,131 @@ input {
   font-size: 0.8rem;
 }
 
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .cta .container-l {
+    max-width: 54.313rem;
+  }
+  .cta .cta__img {
+    right: -34px;
+  }
+  .cta .title {
+    font-size: 2rem;
+  }
+  .cta .cta__input {
+    min-width: 11.438rem;
+  }
+  .cta .cta__form-button {
+    font-size: 0.8rem;
+  }
+  .cta .cta__title {
+    margin-top: 3.5rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .cta .container-b {
+    max-width: 46.25rem;
+  }
+  .cta .container-l {
+    max-width: 37.313rem;
+  }
+  .cta .cta__img {
+    display: none;
+  }
+  .cta .cta__content {
+    flex-basis: 100%;
+  }
+  .cta .title {
+    font-size: 2rem;
+  }
+  .cta .cta__input {
+    min-width: 11.438rem;
+  }
+  .cta .cta__form-button {
+    font-size: 0.8rem;
+  }
+  .cta .cta__title {
+    margin-top: 3.5rem;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .cta .container-b {
+    max-width: 33.25rem;
+  }
+  .cta .container-l {
+    max-width: 29.313rem;
+  }
+  .cta .cta__img {
+    display: none;
+  }
+  .cta .cta__content {
+    flex-basis: 100%;
+  }
+  .cta .title {
+    font-size: 2rem;
+  }
+  .cta .cta__input {
+    min-width: 11.438rem;
+  }
+  .cta .cta__form-button {
+    font-size: 0.8rem;
+  }
+  .cta .cta__title {
+    margin-top: 3.5rem;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .cta .container-b {
+    max-width: 33.25rem;
+  }
+  .cta .container-l {
+    max-width: 29.313rem;
+  }
+  .cta .cta__img {
+    display: none;
+  }
+  .cta .cta__content {
+    flex-basis: 100%;
+  }
+  .cta .title {
+    font-size: 2rem;
+  }
+  .cta .cta__input {
+    min-width: 11.438rem;
+  }
+  .cta .cta__form-button {
+    font-size: 0.8rem;
+  }
+  .cta .cta__title {
+    margin-top: 3.5rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .cta .container-b {
+    max-width: 33.25rem;
+  }
+  .cta .container-l {
+    max-width: 29.313rem;
+  }
+  .cta .cta__img {
+    display: none;
+  }
+  .cta .cta__content {
+    flex-basis: 100%;
+  }
+  .cta .title {
+    font-size: 2rem;
+  }
+  .cta .cta__input {
+    min-width: 11.438rem;
+  }
+  .cta .cta__form-button {
+    font-size: 0.8rem;
+  }
+  .cta .cta__title {
+    margin-top: 3.5rem;
+  }
+}
+
 .footer {
   background: rgb(244, 247, 251);
 }
@@ -1813,6 +1938,17 @@ input {
 }
 .footer .credits__chats-links:last-child {
   margin-right: 0;
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .footer .container-l {
+    max-width: 62.313rem;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .footer .container-l {
+    max-width: 54.313rem;
+  }
 }
 
 .modal {

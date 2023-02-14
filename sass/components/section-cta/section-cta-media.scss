@@ -1,0 +1,126 @@
+.cta {
+    @include media(screen,'>lg','<=xl') {
+        .container-l {
+            max-width: 54.313rem;
+        }
+        .cta__img {
+            right: -34px;
+        }
+        .title {
+            font-size: 2rem;
+        }
+        .cta__input {
+            min-width: 11.438rem;
+        }
+        .cta__form-button {
+            font-size: 0.8rem;
+        }
+        .cta__title {
+            margin-top: 3.5rem;
+        }
+    }
+    @include media(screen,'>md','<=lg') {
+        .container-b {
+            max-width: 46.25rem;
+        }
+        .container-l {
+            max-width: 37.313rem;
+        }
+        .cta__img {
+            display: none;
+        }
+        .cta__content {
+            flex-basis: 100%;
+        }
+        .title {
+            font-size: 2rem;
+        }
+        .cta__input {
+            min-width: 11.438rem;
+        }
+        .cta__form-button {
+            font-size: 0.8rem;
+        }
+        .cta__title {
+            margin-top: 3.5rem;
+        }
+    }
+    @include media(screen,'>sm','<=md') {
+        .container-b {
+            max-width: 33.25rem;
+        }
+        .container-l {
+            max-width: 29.313rem;
+        }
+        .cta__img {
+            display: none;
+        }
+        .cta__content {
+            flex-basis: 100%;
+        }
+        .title {
+            font-size: 2rem;
+        }
+        .cta__input {
+            min-width: 11.438rem;
+        }
+        .cta__form-button {
+            font-size: 0.8rem;
+        }
+        .cta__title {
+            margin-top: 3.5rem;
+        }
+    }
+    @include media(screen,'>sm','<=md') {
+        .container-b {
+            max-width: 33.25rem;
+        }
+        .container-l {
+            max-width: 29.313rem;
+        }
+        .cta__img {
+            display: none;
+        }
+        .cta__content {
+            flex-basis: 100%;
+        }
+        .title {
+            font-size: 2rem;
+        }
+        .cta__input {
+            min-width: 11.438rem;
+        }
+        .cta__form-button {
+            font-size: 0.8rem;
+        }
+        .cta__title {
+            margin-top: 3.5rem;
+        }
+    }
+    @include media(screen,'>319px','<=sm') {
+        .container-b {
+            max-width: 33.25rem;
+        }
+        .container-l {
+            max-width: 29.313rem;
+        }
+        .cta__img {
+            display: none;
+        }
+        .cta__content {
+            flex-basis: 100%;
+        }
+        .title {
+            font-size: 2rem;
+        }
+        .cta__input {
+            min-width: 11.438rem;
+        }
+        .cta__form-button {
+            font-size: 0.8rem;
+        }
+        .cta__title {
+            margin-top: 3.5rem;
+        }
+    }
+}
